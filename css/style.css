@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/logo.jpg");
+    background-image:linear-gradient(rgb(52, 73, 94), rgb(44, 62, 80)) ;
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 100vh;/* You must set a specified height */
     width: 100%;
