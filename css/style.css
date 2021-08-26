@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg");
+    background-image: url("../img/logo.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 100vh;/* You must set a specified height */
     width: 100%;
