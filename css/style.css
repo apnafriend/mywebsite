@@ -1,0 +1,12 @@
+body {
+    background-image: url("/img/logo.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh;/* You must set a specified height */
+    width: 100%;
+    background-size: cover;
+  }
+.fa{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
