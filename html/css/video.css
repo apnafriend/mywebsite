@@ -1,0 +1,65 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.hero .logo_text{
+    font-size: 30px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+    width: 160px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.hero h1{
+    font-size: 75px;
+    margin-top: 12%;
+}
+.hero button{
+    background: #393939;
+    border: 0;
+    outline: none;
+    padding: 15px 35px;
+    color: #fff;
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+#loading{
+    background: #000 url(../images/circle-loader-gif-2.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    z-index: 100;
+}#loading{
+    background: #000 url(../images/circle-loader-gif-2.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    z-index: 100;
+} */
+.hero{
+    background-image: url(../../images/79a384c3c449ad01b0e57e790807b2c0.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
