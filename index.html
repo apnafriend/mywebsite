@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Apnad Friend</title>
-    <link rel="icon" href="img/LogoWebBabaji.png" type="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-        <script src=
-    "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
-        </script>
-</head>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna Friend</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div class="hero">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Apna Friend</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid" ng-app="" ng-init="name='Apna Friend'">
-          <a class="navbar-brand" href="" aria-disabled="true">
-            {{name}}
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item" ng-app="" ng-init="buttons='Home'">
-                <a class="nav-link active" aria-current="page" href="#">{{buttons}}</a>
-              </li>
-              <li class="nav-item" ng-init="about='About us'">
-                <a class="nav-link" href="about.html">{{about}}</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Downlaod
-                </a>
-                <div ng-app="" ng-init="links=['Downlaod our app', 'Download source code']"></div>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="apk/Apna Friend.apk">{{ links[0] }}</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="download/Apna Friend.zip">{{ links[1]}}</a></li>
-                </ul>
-                </li>
-                </ul>
-                <form class="d-flex">
-                   <a href="https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ"> <i class="fa fa-youtube-play"></i></a>
-                   <a href="https://m.facebook.com/ApnaFriendWget"> <i class="fa fa-facebook"></i></a>
-                   <a href="mailto::webbabaji923@gmail.com"> <i class="fa fa-google"></i></a>
-                   <a href="https://github.com/apnafriend/"> <i class="	fa fa-github"></i></a>
-                  </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li> -->
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="button">Search</button>
           </div>
+          <form action="https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ" class="form-inline">
+            <button class="btn btn-danger mx-2" id="video">Vidoes</button>
+          </form>
         </div>
       </nav>
-      <div class="card text-white bg-danger mt-5 mb-5 mx-5"  style="max-width: 30rem;">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Join with our beta app </h5>
-          <p class="card-text">Download our beta version and review the experince .</p>
-          <a href="apk/Apna Friend.apk" class="btn btn-primary">Downlaod</a>
-        </div>
+      <div class="content">
+        <small><span class="badge badge-secondary">Welcome to</span></small>
+        <h1>Apna Friend World</h1>
+        <p>Learn Web Development for free .</p>
+        <button class="btn btn-primary" id="join">Join us</button>
+        <button class="btn btn-danger mx-3" id="download">
+          Download our app
+        </button>
       </div>
-      <div class="card text-white bg-primary mb-3 my-3 ms-5" style="max-width: 18rem;">
-        <div class="card-header">Coding</div>
-        <div class="card-body">
-          <h5 class="card-title">What is coding ? </h5>
-          <p class="card-text text-truncate">Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding).The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing unit. The purpose of programming is to find a sequence of instructions that will automate the performance of a task (which can be as complex as an operating system) on a computer, often for solving a given problem. Proficient programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.</p>
-        <a href="" class="btn btn-outline-info">Read More</a>
-        </div>
+      <div class="bubbles">
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
+        <img src="images/bubble.png" alt="" srcset="" />
       </div>
-      <div class="card text-white bg-secondary mt-4 mb-5 mx-5" style="max-width: 18rem;
-        ">
-        <div class="card-header">Software</div>
-        <div class="card-body">
-          <h5 class="card-title">How to build software ?</h5>
-          <p class="card-text text-truncate">In software development, Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program. Though integrated development environments and language-specific compiler features can also be used to manage a build process, Make remains widely used, especially in Unix and Unix-like operating systems.</p>
-        <a href="" class="btn btn-outline-info" >Read More</a>
-        </div>
-      </div>
-      <style>
-        body {
-    background-image:url(img/logo.jpg) ;
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100vh;/* You must set a specified height */
-    width: 100%;
-    background-size: cover;
-  }
-.fa{
-    color: #fff;
-    font-size: 24px;
-    padding: 10px;
-}
-
-      </style>
-</body>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
