@@ -110,6 +110,9 @@ h1 {
     animation-delay: 7s;
 }
 @media screen and (max-width:474px) {
+    #loading{
+        background-size: 40%;
+    }
     .content {
         position: relative;
         margin-bottom: 10px;
