@@ -55,7 +55,7 @@
         <input type="text" name="" id="myInput" class="form-control mt-4" value="https://apnafriend.gq" readonly>
         <button class="btn btn-primary mt-4" onclick="myFunction()" id="CopyButton">Copy to clipboard</button>
        </div>
-       <div class="container mt-4">
+       <div class="container mt-4 text-center">
         <button class="btn btn-primary" id="shareWhatsapp"  data-action="share/whatsapp/share"
         target="_blank">Share on whatsapp </button>
        </div>
@@ -80,22 +80,18 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         </div>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="max-width: 200px;" id="copy">
-            <strong>Text Copied</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+        
     </div>
     
     <script>
         var loading = document.getElementById('loading');
         window.addEventListener('load', function(){
             loading.style.display = 'none';
-            document.cookie = "username=Apna Friend; expires=Thu, 18 Dec 2021 12:00:00 UTC; Secure; path=/";
+            document.cookie = "username=John Smith; expires=Thu, 18 Dec 2021 12:00:00 UTC; Secure; path=/";
         })
         var click = document.getElementById('flexCheckDefault');
         var btn = document.getElementById('download');
