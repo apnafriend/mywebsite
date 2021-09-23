@@ -26,44 +26,56 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="https://apnafriend.gq/about.html">About us</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
           </nav>
-        <div class="video_player">
-            <!-- <div class="plyr__video-embed" id="player">
+       <!--  <div class="video_player">
+            <div class="plyr__video-embed" id="player">
                 <iframe
                   src="https://www.youtube.com/embed/ptpVwPakhiA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
                   allowfullscreen
                   allowtransparency
                   allow="autoplay"  data-poster="images/background.png"></iframe>
                 ></iframe>
-              </div> -->
+              </div>
               
         </div>
-    </div>
+        -->
+        <div class="box mt-4">
+                <div class="card mt-5 bg-danger" style="width: 18rem;">
+          <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+        <div class="card-body">
+          <h5 class="card-title">Learn html</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         <button class="btn btn-primary" id="html">Learn</button>
+        </div>
+      </div>
+         <div class="card mx-3 mt-5 bg-danger" style="width: 18rem;">
+        <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+        <div class="card-body">
+          <h5 class="card-title">Learn css</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <button class="btn btn-primary" id="css">Learn</button>
+        </div>
+      </div>
+      <div class="card mx-3 mt-5 bg-danger" style="width: 18rem;">
+        <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+        <div class="card-body">
+          <h5 class="card-title">Learn javascript</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <button class="btn btn-primary" id="javscript">Learn</button>
+        </div>
+      </div>
+        </div>
     <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -80,6 +92,7 @@
     crossorigin="anonymous"
   ></script>
     <script src="https://cdn.plyr.io/3.6.8/demo.js" crossorigin="anonymous"></script>
+    <script src="js/video.js"></script>
     <script>
         var loading = document.getElementById('loading');
         window.addEventListener('load', function(){
