@@ -18,7 +18,7 @@
     <div class="hero">
         <div id="loading"></div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Apna Friend</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -115,6 +115,8 @@ search.addEventListener("input", function(){
 				elements.style.display = 'block';
 			}else{
 				elements.style.display = 'none';
+                                let warning = `<div class="alert alert-danger mt-5">No search matches</div>`;
+                                document.write(warning);
 			}
 			// console.log(cardTxt);
 	})
