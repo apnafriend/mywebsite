@@ -11,7 +11,7 @@ document.getElementById('javscript').onclick = function(){
 let search = document.getElementById('search');
 search.addEventListener("input", function(){
 	let inputVal = search.value.toLowerCase();
-	console.log('Event fired', inputVal);
+// 	console.log('Event fired', inputVal);
 	let videoCard = document.getElementsByClassName('card')
 	Array.from(videoCard).forEach(function(elements){
 			let cardTxt = elements.getElementsByTagName("h5")[0].innerText;
