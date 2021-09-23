@@ -11,12 +11,12 @@ let loading = document.getElementById("loading");
 window.addEventListener("load", function () {
   loading.style.display = "none";
 });
-const search = document.getElementById("search");
-const btn = document.getElementById("button");
-btn.onclick = function () {
-  if (!search.value =="") {
-    location.href = `https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ/search?query=${search.value}`;
-  } else {
-    alert("Please Enter the value");
-  }
-};
+// const search = document.getElementById("search");
+// const btn = document.getElementById("button");
+// btn.onclick = function () {
+//   if (!search.value =="") {
+//     location.href = `https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ/search?query=${search.value}`;
+//   } else {
+//     alert("Please Enter the value");
+//   }
+// };
