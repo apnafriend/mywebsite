@@ -51,30 +51,59 @@
         </div>
         -->
         <div class="box mt-4">
-                <div class="card mt-5 bg-danger" style="width: 18rem;">
+                <div class="card mt-5 bg-dark text-white" style="width: 18rem;">
           <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
         <div class="card-body">
           <h5 class="card-title">Learn html</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Learn html with full instruction and learn elements .Build the basic website in quick minute .</p>
          <button class="btn btn-primary" id="html">Learn</button>
         </div>
       </div>
-         <div class="card mx-3 mt-5 bg-danger" style="width: 18rem;">
+         <div class="card mx-3 mt-5 bg-dark text-white" style="width: 18rem;">
         <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
         <div class="card-body">
           <h5 class="card-title">Learn css</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Learn css and bulid amazing website and design . Stylish website is clear .</p>
            <button class="btn btn-primary" id="css">Learn</button>
         </div>
       </div>
-      <div class="card mx-3 mt-5 bg-danger" style="width: 18rem;">
+      <div class="card mx-3 mt-5 bg-dark text-white" style="width: 18rem;">
         <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
         <div class="card-body">
           <h5 class="card-title">Learn javascript</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Learn javscript and build dynamic website and ui . Data sturcture and algorithms .</p>
            <button class="btn btn-primary" id="javscript">Learn</button>
         </div>
       </div>
+      <div class="card mx-3 mt-5 bg-dark text-white" style="width: 18rem;">
+        <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+        <div class="card-body">
+          <h5 class="card-title">Learn php</h5>
+          <p class="card-text">Learn php and build dynamic website and backend. Learn backend with php . This is very easy .</p>
+           <button class="btn btn-primary" id="javscript">Learn</button>
+        </div>
+      </div>
+        </div>
+        <div class="box mt-4">
+          <div class="card mt-5 bg-dark text-white" style="width: 18rem;">
+    <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+  <div class="card-body">
+    <h5 class="card-title">Learn Ethical hacking</h5>
+    <p class="card-text">Learn ethical hacking and buld your carrer in cyber securtiy</p>
+   <button class="btn btn-primary" id="html">Learn</button>
+  </div>
+</div>
+   <div class="card mx-3 mt-5 bg-dark text-white" style="width: 18rem;">
+  <!-- <img src="../images/html.png" class="card-img-top img-fluid rounded" alt="html logo"> -->
+  <div class="card-body">
+    <h5 class="card-title">Learn making something</h5>
+    <p class="card-text">Learn something else from others .Amazing ticks , latest updates .</p>
+     <button class="btn btn-primary" id="css">Learn</button>
+  </div>
+</div>
+  </div>
+        <div class="container">
+          <h3 class="text-center" id="record"></h3>
         </div>
     <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -94,7 +123,11 @@
     <script src="https://cdn.plyr.io/3.6.8/demo.js" crossorigin="anonymous"></script>
     <script src="js/video.js"></script>
     <script>
-        document.getElementById('html').onclick = function(){
+        var loading = document.getElementById('loading');
+        window.addEventListener('load', function(){
+            loading.style.display = 'none';
+        })
+	    document.getElementById('html').onclick = function(){
 	location.href = location.href = `https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ/search?query=html`;
 } 
 document.getElementById('css').onclick = function(){
@@ -105,26 +138,24 @@ document.getElementById('javscript').onclick = function(){
 } 
 
 let search = document.getElementById('search');
+let error = document.getElementById('record');
 search.addEventListener("input", function(){
 	let inputVal = search.value.toLowerCase();
-// 	console.log('Event fired', inputVal);
+	// console.log('Event fired', inputVal);
 	let videoCard = document.getElementsByClassName('card')
 	Array.from(videoCard).forEach(function(elements){
 			let cardTxt = elements.getElementsByTagName("h5")[0].innerText;
 			if(cardTxt.includes(inputVal)){
+				error.style.display = 'none';
 				elements.style.display = 'block';
 			}else{
 				elements.style.display = 'none';
-                                let warning = `<div class="alert alert-danger mt-5">No search matches</div>`;
-                                document.write(warning);
+				error.innerHTML = `No results for search ${inputVal} try again with another keywords . `
+				error.style.display = 'block';
 			}
 			// console.log(cardTxt);
 	})
 })
-        var loading = document.getElementById('loading');
-        window.addEventListener('load', function(){
-            loading.style.display = 'none';
-        })
     </script>
 </body>
 </html>
