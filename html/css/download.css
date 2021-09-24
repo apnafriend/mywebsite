@@ -14,3 +14,16 @@ i{
 .hero h1{
 	color: #fff;
 }
+#loading{
+	background: #000 url(../../images/circle-loader-gif-2.gif) no-repeat center center;
+	background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+@media screen and (max-width:474px){
+	#loading{
+		background-size: 30%;
+	}
+}
