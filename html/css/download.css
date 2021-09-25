@@ -7,15 +7,21 @@ i{
 }
 .hero{
 	height: 100vh;
-	background-image:url(../../images/background.png);
+	background-image:url(../../images/backhack.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .hero h1{
 	color: #fff;
 }
+.icon i{
+	color: #fff;
+	font-size: 20px;
+	margin-left: 3%;
+	padding: 10px;
+}
 #loading{
-	background: #000 url(../../images/circle-loader-gif-2.gif) no-repeat center center;
+	background: #fff url(../../images/Circles-menu-3.gif) no-repeat center center;
 	background-size: 15%;
     height: 100vh;
     width: 100%;
