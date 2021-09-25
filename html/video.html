@@ -127,7 +127,7 @@
         window.addEventListener('load', function(){
             loading.style.display = 'none';
         })
-	    document.getElementById('html').onclick = function(){
+	   document.getElementById('html').onclick = function(){
 	location.href = location.href = `https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ/search?query=html`;
 } 
 document.getElementById('css').onclick = function(){
@@ -139,7 +139,9 @@ document.getElementById('javscript').onclick = function(){
 
 let search = document.getElementById('search');
 let error = document.getElementById('record');
+let searchLoad = document.getElementById('loading');
 search.addEventListener("input", function(){
+	searchLoad.style.display = 'block';
 	let inputVal = search.value.toLowerCase();
 	// console.log('Event fired', inputVal);
 	let videoCard = document.getElementsByClassName('card')
@@ -147,9 +149,11 @@ search.addEventListener("input", function(){
 			let cardTxt = elements.getElementsByTagName("h5")[0].innerText;
 			if(cardTxt.includes(inputVal)){
 				error.style.display = 'none';
+				searchLoad.style.display = 'none';
 				elements.style.display = 'block';
 			}else{
 				elements.style.display = 'none';
+				searchLoad.style.display = 'none';
 				error.innerHTML = `No results for search ${inputVal} try again with another keywords . `
 				error.style.display = 'block';
 			}
