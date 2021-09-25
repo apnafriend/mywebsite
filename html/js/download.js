@@ -16,3 +16,7 @@ document.getElementById('shareWhatsapp').onclick = function(){
 document.getElementById('video').onclick = function(){
     location.href = 'video.html';
 }
+apk.onclick = function(){
+    location.href = 'https://github.com/apnafriend/mywebsite/raw/main/apk/Apna%20Friend.apk';
+}
+var apk = document.getElementById('apk');
