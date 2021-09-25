@@ -71,16 +71,10 @@
                             <h5 class="modal-title" style="color: black;">Download our app .</h5>
                         </div>
                         <div class="modal-body">
-                            <p style="color: black;">As you click on the checkbox you are agree to our privacy policy . Please check the box for downlaod .</p>
+                            <p style="color: black;">As you click on the download button you are agree to our privacy policy . Please check the box for downlaod .</p>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              As you click on the checkbox you are agree .
-                            </label>
-                          </div>
                         <div class="modal-footer">
-                           <a href="apk/Apna Friend.apk" class="btn btn-primary download" id="download">Download</a>
+                           <button class="btn btn-primary downlaod" id="apk" disabled="">Download</button>
                         </div>
                     </div>
                 </div>
@@ -95,17 +89,7 @@
         var loading = document.getElementById('loading');
         window.addEventListener('load', function(){
             loading.style.display = 'none';
-            document.cookie = "username=John Smith; expires=Thu, 18 Dec 2021 12:00:00 UTC; Secure; path=/";
-        })
-        var click = document.getElementById('flexCheckDefault');
-        var btn = document.getElementById('download');
-        click.addEventListener('click', function(){
-            btn.style.pointerEvents = "visible";
-            // document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
-            btn.addEventListener('click',function(){
-            window.Location('tamplate.html')
-            alert('Thanks for downlaod our app .')
-        }) 
+            document.cookie = "session=John Smith; expires=Thu, 18 Dec 2021 12:00:00 UTC; Secure; path=/";
         })
         
     </script>
