@@ -11,6 +11,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"
   />
+  <script src="https://kit.fontawesome.com/9499c3bbe1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/video.css">
     <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/demo.css" /> -->
 </head>
@@ -34,7 +35,10 @@
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <a href="" class="icon"><i class="fa fa-youtube"></i></a>
+                <a href="" class="icon"><i class="fa fa-facebook"></i></a>
+                <a href="" class="icon"><i class="fa fa-google"></i></a>
+                <a href="" class="icon"><i class="fa fa-twitter"></i></a>
               </form>
             </div>
           </nav>
@@ -121,13 +125,13 @@
     crossorigin="anonymous"
   ></script>
     <script src="https://cdn.plyr.io/3.6.8/demo.js" crossorigin="anonymous"></script>
-<!--     <script src="js/video.js"></script> -->
+    <script src="js/video.js"></script>
     <script>
         var loading = document.getElementById('loading');
         window.addEventListener('load', function(){
             loading.style.display = 'none';
         })
-	   document.getElementById('html').onclick = function(){
+	    document.getElementById('html').onclick = function(){
 	location.href = location.href = `https://www.youtube.com/channel/UCshWRapXT3RFxCYOPlscGyQ/search?query=html`;
 } 
 document.getElementById('css').onclick = function(){
