@@ -1,22 +1,26 @@
 #loading {
-    background: #000 url(../images/circle-loader-gif-2.gif) no-repeat center center;
+    background: #fff url(../images/Walk.gif) no-repeat center center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
     position: absolute;
     z-index: 100;
 }
-
+#learn{
+    width: 20%;
+}
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/background.png);
+    background-image: url(../images/backgroundNew.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
 }
-
+.hero #logo{
+    cursor:copy;
+}
 .content {
     color: #fbfcfd;
     position: absolute;
@@ -40,7 +44,12 @@
     position: absolute;
     top: 280px; */
 }
-
+.icon i{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 3%;
+    padding: 10px;
+}
 h1 {
     font-size: 80px;
     margin: 10px 0 30px;
