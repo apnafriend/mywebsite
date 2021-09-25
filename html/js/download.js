@@ -10,9 +10,9 @@ function myFunction(){
     copyButton.disabled = 'true';
 }
 document.getElementById('shareWhatsapp').onclick = function(){
-    let shareText = 'Apna Friend teach me amazing coding with html, css and javascript .';
+    let shareText = `Apna Friend tech me to learn web development from basic to advanced . To chackout the website click here ${copyText}. Thanks .`;
     location.href = `whatsapp://send?text=${shareText}`;
 }
 document.getElementById('video').onclick = function(){
-    location.href = 'apnaFriend/html/video.html?';
+    location.href = 'video.html';
 }
